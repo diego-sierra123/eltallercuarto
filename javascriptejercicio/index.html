@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular la media de 3 números</title>
+    <link rel="icon" href="./imagenes/uno.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="icon" href="./img/uno.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form action="index.html">
+                    <div class="formulario" style="border-radius: 20px; border: 4px solid gray;">
+                        <div class="text-center">
+                            <h2 class="text-white"><b>PROMEDIO DE 5 NOTAS DE LA MATERIA DE ALGORITMOS</b></h2>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="mb-4">
+                            <label for="exampleInputEmail1" class="form-label text-white"><b>INGRESE LA NOTA DEL TALLER 1:</b></label>
+                            <input type="number" class="form-control" id="num1" aria-describedby="emailHelp" placeholder="Ingrese acá la nota del 1 taller" min="0" required="">
+                            <div id="emailHelp" class="form-text text-white"><b>En este campo deberá ingresar la nota del 1 taller.</b></div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="exampleInputPassword1" class="form-label text-white"><b>INGRESE LA NOTA DEL TALLER 2:</b></label>
+                            <input type="number" class="form-control" id="num2" placeholder="Ingrese acá la nota del 2 taller" min="0" required="">
+                            <div id="emailHelp" class="form-text text-white"><b>En este campo deberá ingresar la nota del 2 taller.</b></div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="exampleInputPassword1" class="form-label text-white"><b>INGRESE LA NOTA DEL TALLER 3:</b></label>
+                            <input type="number" class="form-control" id="num3" placeholder="Ingrese acá la nota del 3 taller" min="0" required="">
+                            <div id="emailHelp" class="form-text text-white"><b>En este campo deberá ingresar la nota del 3 taller.</b></div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="exampleInputPassword1" class="form-label text-white"><b>INGRESE LA NOTA DEL PARCIAL:</b></label>
+                            <input type="number" class="form-control" id="parcial" placeholder="Ingrese acá la nota del parcial" min="0" required="">
+                            <div id="emailHelp" class="form-text text-white"><b>En este campo deberá ingresar la nota del parcial.</b></div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="exampleInputPassword1" class="form-label text-white"><b>INGRESE LA NOTA DEL TRABAJO FINAL:</b></label>
+                            <input type="number" class="form-control" id="trabajoFinal" placeholder="Ingrese acá la nota del trabajo final" min="0" required="">
+                            <div id="emailHelp" class="form-text text-white"><b>En este campo deberá ingresar la nota del trabajo final.</b></div>
+                        </div>
+                        <br>
+                        <div class="text-white">
+                            <b><span class="text-danger">NOTA:</span> El promedio de las 5 notas aparecerá en la parte inferior después de ingresar las notas y dar clic en "Calcular Promedio" tenga en cuenta que el promedio de los 3 talleres equivale el 55%, el parcial el 30%, el trabajo final el 15% del promedio final de la materia de algoritmos.</b>
+                        </div>
+                        <br>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-secondary" style="border: 2px solid black;"
+                                onclick="borrar()">Borrar Datos</button>
+                            <button type="button" class="btn btn-primary" style="border: 2px solid black;"
+                                onclick="calcularMedia()">Calcular</button>
+                        </div>
+                        <br>
+
+                        <br>
+                        <div class="text-center" id="res" style="margin-left: 10px; margin-right: 10px;">
+
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
+            <script src="./javascript/ejercicio.js"></script>
+</body>
+
+</html>
